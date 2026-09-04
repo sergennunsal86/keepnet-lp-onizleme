@@ -214,3 +214,12 @@ footer a{color:#cfe0f2}
 .split.altgorsel .txt{order:0}
 .split.altgorsel .shot{max-width:1020px;margin-left:auto;margin-right:auto}
 .split.altgorsel > div:not(.txt){order:1}
+
+/* --- mobil tasma duzeltmesi ---
+   grid ve flex cocuklari varsayilan olarak min-width:auto aldigi icin
+   icindeki genis tablo sayfayi yana itiyordu. */
+.split > *, .split .txt, .wrap > *{min-width:0}
+.tablewrap{max-width:100%}
+table{min-width:520px}
+@media(max-width:520px){ table{min-width:460px} th,td{padding:12px 14px;font-size:.85rem} }
+body{overflow-x:hidden}
