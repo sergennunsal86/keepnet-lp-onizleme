@@ -267,3 +267,13 @@ body{overflow-x:hidden}
 .logo{display:flex;align-items:center;text-decoration:none}
 .logo img{height:34px;width:auto;display:block}
 @media(max-width:600px){.logo img{height:28px}}
+
+/* telefon kodu + telefon */
+.tel{display:flex;gap:8px}
+.tel #telKod{width:78px;flex:none;text-align:center;background:#f7f9fb;color:var(--navy);font-weight:600}
+.tel input[type=tel]{flex:1}
+
+/* recaptcha bilgisi */
+.captcha{font-size:.74rem;color:var(--muted);margin:10px 0 0;display:flex;align-items:center;gap:6px;line-height:1.5}
+.captcha a{color:var(--muted);text-decoration:underline}
+.captcha .kilit{font-size:.85rem}
