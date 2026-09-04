@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 
@@ -45,52 +45,20 @@
     <div class="formcard" id="demo">
       <h3>See it on your own channels</h3>
       <div class="sub">30 minutes, live, with your own scenarios.</div>
-      <div class="field"><label>Work email</label><input type="email" placeholder="name@company.com"></div>
-      <div class="field"><label>Full name</label><input type="text" placeholder="Jane Doe"></div>
-      <div class="field"><label>Company</label><input type="text" placeholder="Company name"></div>
-      <div class="field"><label>Number of employees</label>
+      <div class="field"><label>Business email <span class="zor">*</span></label><input type="email" placeholder="name@company.com"></div>
+      <div class="field"><label>Full name <span class="zor">*</span></label><input type="text" placeholder="Jane Doe"></div>
+      <div class="field"><label>Company name <span class="zor">*</span></label><input type="text" placeholder="Company name"></div>
+      <div class="field"><label>Country <span class="zor">*</span></label>
+        <select><option>Select a country</option><option>United States</option><option>United Kingdom</option><option>Turkiye</option></select>
+      </div>
+      <div class="field"><label>Number of employees <span class="zor">*</span></label>
         <select><option>1 - 250</option><option>251 - 1,000</option><option>1,001 - 5,000</option><option>5,001+</option></select>
       </div>
-      <button class="btn lg" style="width:100%">Book my demo</button>
-      <p class="formnote"><b>Not.</b> Canli formda 5 Eylul gecesi zorunlu alan sayisi 8 den 5 e indirildi (telefon, ulke ve kaynak sorusu istege bagli oldu, ulke temsilci atamasi icin zorunlu birakildi). Ayrica cerez rizasi reddedildiginde reCAPTCHA yuklenmeme sorunu giderildi, form artik her durumda gonderilebiliyor.</p>
-      <ul class="ticks">
-        <li>Five channels in one campaign</li>
-        <li>A separate risk score per channel</li>
-        <li>Failed users get training automatically</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<div class="logos">
-  <div class="wrap">
-    <small>Trusted by security teams around the world</small>
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/7be25697-ddc9-4e3b-38b0-963ab2206100/public" alt="Toyota" loading="lazy">
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/0604df1c-471a-4837-4201-74904fb2ee00/public" alt="Dell" loading="lazy">
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/0c16ac8a-28dc-4088-f594-ea536ba51d00/public" alt="Zoom" loading="lazy">
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/93a32346-1ffd-4d4b-1016-bd5d3496bf00/public" alt="Vodafone" loading="lazy">
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/9d8b130d-7b8d-4e29-15a3-71abd3014e00/public" alt="MERCK" loading="lazy">
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/e902e606-f3fd-4397-e046-4e06b541c600/public" alt="SOCAR" loading="lazy">
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/7574e2cf-5fff-443a-06d6-723434a5d600/public" alt="Hershey" loading="lazy">
-    <img src="https://imagedelivery.net/KxWh-mxPGDbsqJB3c5_fmA/1cf90e3c-7fcb-43b2-019a-0a33cc0ecf00/public" alt="Garanti Bankasi" loading="lazy">
-  </div>
-</div>
-</div>
-
-<section class="sec" id="why">
-  <div class="wrap">
-    <div class="center">
-      <p class="eyebrow">The gap</p>
-      <h2>You are testing the channel that fails least</h2>
-      <p class="lead">Email is the channel every programme simulates. It is also the channel where people are already the most careful.</p>
-    </div>
-
-    <div class="stats" style="margin-top:38px">
-      <div class="stat">
-        <div class="n">1.4%</div>
-        <div class="t">median click rate on email simulations</div>
-        <div class="s">Verizon, 2026 Data Breach Investigations Report, p. 50.</div>
+      <div class="field"><label>Phone number <span class="ops">optional</span></label><input type="tel" placeholder="+1 555 000 0000"></div>
+      <div class="field"><label>Where did you hear about us? <span class="ops">optional</span></label>
+        <select><option>Please select</option><option>Search engine</option><option>ChatGPT, Perplexity or another AI assistant</option><option>LinkedIn</option><option>A colleague or friend recommended us</option></select>
       </div>
+      <div class="field"><label>Message <span class="ops">optional</span></label><input type="text" placeholder="Anything we should know?"></div>
       <div class="stat">
         <div class="n">2%</div>
         <div class="t">median failure rate on phone-centric simulations</div>
