@@ -262,3 +262,8 @@ body{overflow-x:hidden}
 .lchip b{color:var(--blue);font-weight:800;margin-right:4px}
 .langornek{margin:16px 0 0;font-size:.88rem;color:#5a6b82;line-height:1.6}
 @media(max-width:600px){.langbody-ozet{padding:18px 18px}.lchip{font-size:.8rem;padding:6px 12px}}
+
+/* ustteki gercek logo */
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:34px;width:auto;display:block}
+@media(max-width:600px){.logo img{height:28px}}

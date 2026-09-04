@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
 
 <header>
   <div class="wrap nav">
-    <div class="logo"><span></span>keepnet</div>
+    <a class="logo" href="#"><img src="img/keepnet-logo.svg" alt="Keepnet" width="150" height="43"></a>
     <nav>
       <a href="#why">The gap</a>
       <a href="#different">What is different</a>
@@ -307,7 +307,7 @@
             <tr><td><strong>Email</strong></td><td class="yes">Yes</td><td>Outlook and Gmail add-in</td></tr>
             <tr><td><strong>SMS</strong></td><td class="yes">Yes</td><td>Mobile app</td></tr>
             <tr><td><strong>Voice</strong></td><td class="yes">Yes</td><td>Mobile app</td></tr>
-            <tr><td><strong>QR code</strong></td><td class="yes">Yes</td><td>Mobile app</td></tr>
+            <tr><td><strong>QR code</strong></td><td class="yes">Yes</td><td>Outlook and Gmail add-in</td></tr>
             <tr><td><strong>Callback</strong></td><td class="yes">Yes</td><td>Mobile app</td></tr>
             <tr><td><strong>MFA capture</strong></td><td class="yes">Yes</td><td>Reported as a phishing attempt</td></tr>
           </tbody>
@@ -340,13 +340,12 @@
       <h2>Reported mail is enriched and classified before an analyst opens it</h2>
       <p class="lead">A report button only helps if someone can triage what comes back. Every reported message is checked against the sandboxes and reputation services you already run, then classified by attack type.</p>
       <ol class="numlist">
-        <li><strong>Enriched automatically</strong><span>FortiSandbox, Google Safe Browsing, Google Web Risk, Spamhaus and more, on every reported message.</span></li>
+        <li><strong>Enriched automatically</strong><span>Every reported message is checked against 20+ of the strongest threat intelligence, sandbox and reputation sources before it reaches the queue.</span></li>
         <li><strong>Classified by attack type</strong><span>CEO fraud, credential theft, benign, internal, marketing. The analyst sees the verdict, not a raw inbox.</span></li>
         <li><strong>Resolved automatically where possible</strong><span>Playbooks close the routine cases so the queue only holds what needs a human.</span></li>
       </ol>
       <div class="chips">
-        <span class="chip">FortiSandbox</span><span class="chip">Google Safe Browsing</span><span class="chip">Google Web Risk</span>
-        <span class="chip">Spamhaus</span><span class="chip">Cyber X-Ray</span><span class="chip">Microsoft 365</span><span class="chip">Google Workspace</span>
+        <span class="chip">20+ threat intelligence sources</span><span class="chip">Sandbox analysis</span><span class="chip">URL and file reputation</span><span class="chip">Microsoft 365</span><span class="chip">Google Workspace</span><span class="chip">Your own SIEM and SOAR</span>
       </div>
     </div>
   </div>
@@ -406,7 +405,7 @@
       <details><summary>What is a double barrel scenario?</summary><div class="a"><p>The target receives a harmless first message and only the second message carries the lure. It reproduces conversation-based attacks, which single-message tests never catch.</p></div></details>
       <details><summary>Can employees report a suspicious SMS or a suspicious call?</summary><div class="a"><p>Yes. The Keepnet Reporter is a button in Outlook and Gmail for email, and a mobile app for SMS and voice. All of them land in the same analyst queue.</p></div></details>
       <details><summary>How many languages are supported?</summary><div class="a"><p>89 languages and locales. That count includes locale variants that are built separately rather than translated, such as nine English variants and separate Canadian, Belgian and Swiss French.</p></div></details>
-      <details><summary>Does it work with the security tools we already have?</summary><div class="a"><p>Yes. Reported mail is enriched through sandboxes and reputation services such as FortiSandbox, Google Safe Browsing, Google Web Risk and Spamhaus before an analyst opens it, and results can be pushed to your existing SIEM or SOAR.</p></div></details>
+      <details><summary>Does it work with the security tools we already have?</summary><div class="a"><p>Yes. Reported mail is enriched through 20+ threat intelligence, sandbox and reputation sources before an analyst opens it, and results can be pushed to your existing SIEM or SOAR.</p></div></details>
       <details><summary>Can we run it alongside the tool we already have?</summary><div class="a"><p>Yes. Many teams keep their existing email-only programme and add Keepnet for the channels it does not cover, then consolidate once the per-channel scores make the case.</p></div></details>
       <details><summary>How much does it cost?</summary><div class="a"><p>Pricing is per user and depends on the modules you run. Current plans and per-user pricing are on the pricing page.</p></div></details>
     </div>
