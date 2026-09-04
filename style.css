@@ -196,3 +196,21 @@ footer a{color:#cfe0f2}
 
 .srcline{font-size:.75rem;color:var(--muted);margin-top:16px}
 .figcap{font-size:.78rem;color:var(--muted);text-align:center;margin-top:10px}
+/* --- tam genislikte urun ekrani --- */
+.shotwide{max-width:1000px;margin:34px auto 0}
+.shotwide .shot img{width:100%}
+
+/* --- tiklayinca buyutme (lightbox) --- */
+.shot img{cursor:zoom-in}
+.lb{position:fixed;inset:0;background:rgba(20,30,45,.92);display:none;align-items:center;justify-content:center;z-index:999;padding:24px;cursor:zoom-out}
+.lb.acik{display:flex}
+.lb img{max-width:100%;max-height:92vh;border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.5);background:#fff}
+.lb .kapat{position:absolute;top:18px;right:24px;color:#fff;font-size:2rem;line-height:1;font-weight:300;background:none;border:0;cursor:pointer}
+.lb .ipucu{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#b9cde0;font-size:.8rem}
+@media(max-width:700px){.lb{padding:10px}.lb img{max-height:80vh}}
+
+/* gorsel altta tam genislik: yogun tablo ekranlari icin */
+.split.altgorsel{grid-template-columns:1fr;gap:34px}
+.split.altgorsel .txt{order:0}
+.split.altgorsel .shot{max-width:1020px;margin-left:auto;margin-right:auto}
+.split.altgorsel > div:not(.txt){order:1}

@@ -194,7 +194,7 @@
 </section>
 
 <section class="sec" id="how">
-  <div class="wrap split">
+  <div class="wrap split altgorsel">
     <div class="txt">
       <p class="eyebrow">How it works</p>
       <h2>Measure, assign, prove. In that order.</h2>
@@ -447,5 +447,18 @@
   </div>
 </footer>
 
+
+<div class="lb" id="lb"><button class="kapat" aria-label="Kapat">&times;</button><img alt=""><div class="ipucu">Kapatmak icin herhangi bir yere tiklayin</div></div>
+<script>
+(function(){
+  var lb=document.getElementById("lb"), im=lb.querySelector("img");
+  document.querySelectorAll(".shot img").forEach(function(g){
+    g.addEventListener("click",function(){ im.src=g.currentSrc||g.src; im.alt=g.alt||""; lb.classList.add("acik"); document.body.style.overflow="hidden"; });
+  });
+  function kapa(){ lb.classList.remove("acik"); document.body.style.overflow=""; }
+  lb.addEventListener("click",kapa);
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape") kapa(); });
+})();
+</script>
 </body>
 </html>
