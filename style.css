@@ -223,3 +223,8 @@ footer a{color:#cfe0f2}
 table{min-width:520px}
 @media(max-width:520px){ table{min-width:460px} th,td{padding:12px 14px;font-size:.85rem} }
 body{overflow-x:hidden}
+
+/* gercek musteri logolari */
+.logos img{height:26px;width:auto;opacity:.62;filter:grayscale(1);transition:.2s}
+.logos img:hover{opacity:1;filter:none}
+@media(max-width:600px){.logos .wrap{gap:22px}.logos img{height:20px}}
