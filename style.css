@@ -254,3 +254,11 @@ body{overflow-x:hidden}
 /* form alan etiketleri */
 .field label .zor{color:#c9550f;font-weight:700;margin-left:2px}
 .field label .ops{color:var(--muted);font-weight:500;font-size:.72rem;margin-left:5px;text-transform:none;letter-spacing:0}
+
+/* dil bolumu, sade hali */
+.langbody-ozet{padding:22px 26px}
+.langchips{display:flex;flex-wrap:wrap;gap:9px}
+.lchip{background:var(--wash);border:1px solid var(--pale);border-radius:999px;padding:7px 15px;font-size:.85rem;color:#4a5a72}
+.lchip b{color:var(--blue);font-weight:800;margin-right:4px}
+.langornek{margin:16px 0 0;font-size:.88rem;color:#5a6b82;line-height:1.6}
+@media(max-width:600px){.langbody-ozet{padding:18px 18px}.lchip{font-size:.8rem;padding:6px 12px}}
