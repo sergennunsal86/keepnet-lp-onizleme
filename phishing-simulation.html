@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -54,7 +54,8 @@
       <div class="field"><label>Where did you hear about us? <span class="ops">optional</span></label><select><option>Please Select</option><option>Google or another search engine</option><option>ChatGPT, Perplexity or another AI assistant</option><option>LinkedIn</option><option>A colleague or friend recommended us</option><option>Review site such as G2 or Gartner Peer Insights</option><option>Event, webinar or conference</option><option>News article, blog or podcast</option><option>Keepnet partner or reseller</option><option>Other</option></select></div>
       <div class="field"><label>Message <span class="ops">optional</span></label><input type="text" placeholder="Anything we should know?"></div>
       <button class="btn lg" style="width:100%">Book my demo</button>
-      <p class="captcha"><span class="kilit">&#128274;</span> Protected by reCAPTCHA. <a href="#">Privacy</a> and <a href="#">Terms</a> apply.</p>
+            <p class="maketnot" id="maketNot" hidden>This is a design preview. On the live page this button submits the HubSpot form and redirects to the confirmation page.</p>
+<p class="captcha"><span class="kilit">&#128274;</span> Protected by reCAPTCHA. <a href="#">Privacy</a> and <a href="#">Terms</a> apply.</p>
       <p class="formnote"><b>Not.</b> Canli formda 5 Eylul gecesi zorunlu alan sayisi 8 den 5 e indirildi: telefon numarasi ve kaynak sorusu istege bagli oldu, ulke zorunlu birakildi cunku HubSpot ta iki is akisi satis temsilcisi atamasini o alandan yapiyor. Ayrica cerez rizasi reddedildiginde reCAPTCHA yuklenmeme sorunu giderildi.</p>
       <ul class="ticks">
         <li>Five channels in one campaign</li>
@@ -445,5 +446,7 @@
 </script>
 
 <script>window.__kod={"United States":"+1","Canada":"+1","United Kingdom":"+44","Ireland":"+353","Germany":"+49","France":"+33","Netherlands":"+31","Belgium":"+32","Luxembourg":"+352","Switzerland":"+41","Austria":"+43","Spain":"+34","Portugal":"+351","Italy":"+39","Greece":"+30","Turkey":"+90","Sweden":"+46","Norway":"+47","Denmark":"+45","Finland":"+358","Iceland":"+354","Poland":"+48","Czech Republic":"+420","Slovakia":"+421","Hungary":"+36","Romania":"+40","Bulgaria":"+359","Croatia":"+385","Slovenia":"+386","Serbia":"+381","Bosnia and Herzegovina":"+387","Albania":"+355","Estonia":"+372","Latvia":"+371","Lithuania":"+370","Ukraine":"+380","Russia":"+7","Belarus":"+375","Malta":"+356","Cyprus":"+357","United Arab Emirates":"+971","Saudi Arabia":"+966","Qatar":"+974","Kuwait":"+965","Bahrain":"+973","Oman":"+968","Israel":"+972","Jordan":"+962","Lebanon":"+961","Egypt":"+20","Morocco":"+212","Tunisia":"+216","Algeria":"+213","South Africa":"+27","Nigeria":"+234","Kenya":"+254","Ghana":"+233","India":"+91","Pakistan":"+92","Bangladesh":"+880","China":"+86","Hong Kong":"+852","Taiwan":"+886","Japan":"+81","South Korea":"+82","Singapore":"+65","Malaysia":"+60","Indonesia":"+62","Thailand":"+66","Vietnam":"+84","Philippines":"+63","Australia":"+61","New Zealand":"+64","Brazil":"+55","Mexico":"+52","Argentina":"+54","Chile":"+56","Colombia":"+57","Peru":"+51","Uruguay":"+598","Kazakhstan":"+7","Azerbaijan":"+994","Georgia":"+995"};(function(){var u=document.getElementById("ulkeSec"),k=document.getElementById("telKod");if(!u||!k)return;u.addEventListener("change",function(){k.value=window.__kod[u.value]||"";});})();</script>
+
+<script>(function(){var b=document.querySelector(".formcard .btn.lg");if(!b)return;b.addEventListener("click",function(e){e.preventDefault();var n=document.getElementById("maketNot");if(n){n.hidden=false;n.scrollIntoView({block:"nearest",behavior:"smooth"});}});})();</script>
 </body>
 </html>

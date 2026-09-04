@@ -277,3 +277,19 @@ body{overflow-x:hidden}
 .captcha{font-size:.74rem;color:var(--muted);margin:10px 0 0;display:flex;align-items:center;gap:6px;line-height:1.5}
 .captcha a{color:var(--muted);text-decoration:underline}
 .captcha .kilit{font-size:.85rem}
+
+/* mobilde bolumler arasi bosluk fazlaydi */
+@media(max-width:760px){
+  .sec{padding:48px 0}
+  .sec.tight{padding:36px 0}
+  .split{gap:26px}
+  .split.altgorsel{gap:22px}
+  .stats{margin-top:26px !important}
+  .cards,.quotes,.compare{margin-top:26px}
+  .tablewrap,.langwrap,.shotwide{margin-top:24px}
+  .finalcta{padding:34px 22px}
+  .figcap{margin-top:8px}
+}
+
+/* maket buton bilgisi */
+.maketnot{background:var(--wash);border:1px solid var(--pale);border-radius:var(--rs);padding:11px 14px;font-size:.8rem;color:#4a5a72;margin:12px 0 0;line-height:1.5}
